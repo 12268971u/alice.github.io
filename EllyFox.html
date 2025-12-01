@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="книги, яой, Elly Fox, Я хочу нарисовать, Под твоей охраной, Мамору, Мамору: Новая старая жизнь, Новая старая жизнь, Крициан, Крициан: Судьба демона, Судьба демона, Демоны, Книги про демонов, млм, влв, сёнен-ай, сенен-ай, трансгендер, романтические книги, книги про геев, книги про лгбт">
+    <title>EllyFox_BOOKS</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer scr="script.js"></script>
+<style>
+    body {
+        background-color: #121212;
+        color: #ffffff;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        background-color: #1e1e1e;
+        padding: 20px;
+        text-align: center;
+    }
+    nav ul {
+        display: inline;
+        margin: 0 15px;
+        padding: 0;
+        list-style: none;
+    }
+    nav ul li a {
+        color: #ffcc00;
+        text-decoration: none;
+    }
+    nav ul li a:hover {
+        color: #806600;
+    }
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        background-color: #1e1e1e;
+        text-align: center;
+        padding: 20px;
+    }
+    main {
+        text-align: center;
+        padding: 20px;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <h1>Elly Fox</h1>
+        <nav>
+            <ul>
+                <li><a href="EllyFox_books.html" onclick="loadPage('EllyFox_books.html')">Книги</a></li>
+                <li><a href="EllyFox_reviews.html" onclick="loadPage('reviews.html')">Отзывы</a></li>
+                <li><a href="#" onclick="loadPage('stories.html')">Подробности создания и отсылки</a></li>
+                <li><a href="#" onclick="loadPage('about.html')">Об Elly Fox</a></li>
+                <li><a href="#" onclick="loadPage('socials.html')">Соцсети и контакты</a></li>
+                <li><a href="#" onclick="loadPage('news.html')">Новости</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="content">
+        <h2>Добро пожаловать на сайт Elly Fox!</h2>
+        <img src="fox.jpg" alt="Лисичка с книгой :3" width="400px">
+        <p><i>Выберите раздел в меню чтобы увидеть контент :3</i></p>
+    </main>
+    <footer>
+        <p>2025 Elly Fox | Все права защищены</p>
+    </footer>
+
+    <script defer scr="script.js">
+        function loadPage(page) {
+            fetch(page)
+            .then (response => {if (!response.ok) { throw new Error('Ошибка загрузки страницы :(');} return responce.text(); })
+            .then(data => { document.getElementById('content').innerHTML = data; } )
+            .catch(error => { document.getElementById('content').innerHTML = "<p> Ошибка загрузки контента. Попробуйте позже :(</p>";
+            console.error('Ошибка загрузки :( ', error);
+            });
+        }
+    </script>
+</body>
+</html>

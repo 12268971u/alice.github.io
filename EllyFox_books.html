@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="книги, яой, Elly Fox, Я хочу нарисовать, Под твоей охраной, Мамору, Мамору: Новая старая жизнь, Новая старая жизнь, Крициан, Крициан: Судьба демона, Судьба демона, Демоны, Книги про демонов, млм, влв, сёнен-ай, сенен-ай, трансгендер, романтические книги, книги про геев, книги про лгбт, список книг Elly Fox">
+    <meta name="author" content="Elly Fox">
+    <title>Книги Elly Fox</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer scr="script.js"></script>
+<style>
+    body {
+        background-color: #121212;
+        color: #ffffff;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        background-color: #1e1e1e;
+        padding: 20px;
+        text-align: center;
+    }
+    nav ul {
+        display: inline;
+        margin: 0 15px;
+        padding: 0;
+        list-style: none;
+    }
+    nav ul li a {
+        color: #ffcc00;
+        text-decoration: none;
+    }
+    nav ul li a:hover {
+        color: #806600;
+    }
+    .book-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+        gap: 20px;
+    }
+    .book {
+        background-color: #222;
+        padding: 15px;
+        margin: 10px;
+        border-radius: 8px;
+        text-align: center;
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .book img {
+        width: 150px;
+        border-radius: 5px;
+    }
+    .book h3 {
+        margin: 10px;
+        width: 100%;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        text-align: center;
+    }
+    .book p {
+        font-size: 14px;
+        flex-grow: 1;
+    }
+    .book a {
+        display: inline-block;
+        color: #ffcc00;
+        text-decoration: none;
+        padding: 8px 12px;
+        margin-top: 10px;
+    }
+    footer {
+        background-color: #1e1e1e;
+        text-align: center;
+        padding: 20px;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <h1>Книги Elly Fox</h1>
+        <nav>
+            <ul>
+                <li><a href="EllyFox.html" onclick="loadPage('EllyFox.html')">Главная</a></li>
+                <li><a href="EllyFox_reviews.html" onclick="loadPage('EllyFox_reviews.html')">Отзывы</a></li>
+                <li><a href="EllyFox_stories.html" onclick="loadPage('EllyFox_stories.html')">Подробности создания и отсылки</a></li>
+                <li><a href="EllyFox_about.html" onclick="loadPage('EllyFox_about.html')">Об Elly Fox</a></li>
+                <li><a href="EllyFox_socials.html" onclick="loadPage('EllyFox_socials.html')">Соцсети и контакты</a></li>
+                <li><a href="EllyFox_news.html" onclick="loadPage('EllyFox_news.html')">Новости</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="book-list">
+            <div class="book">
+                <img src="cover_YACHN.jpg" alt="Обложка книги Я хочу нарисовать">
+                <h3>Я хочу нарисовать...</h3>
+                <p><i>«Алан Майер — 16-летний парень, переехавший в маленький городок против своей воли. В его жизни происходили сложные события: он встречал неприятных людей, не ладил с семьёй, к тому же являлся геем. Но новое место учёбы дарит юноше весьма интересные знакомства и источник вдохновения».</i></p>
+                <a href="#">Подробнее</a>
+            </div>
+            <div class="book">
+                <img src="cover_PROTECT.jpg" alt="Обложка книги Под твоей охраной">
+                <h3>Под твоей охраной</h3>
+                <p><i>«Наследный принц Доминик — юноша, покоряющий женские сердца как милой внешностью, так и мягким характером. Венценосные родители и старшая сестра не чаят в нём души. Но что они скажут, узнав о странных отношениях, связывающих принца с его телохранителем?»</i></p>
+                <a href="#">Подробнее</a>
+            </div>
+            <div class="book">
+                <img src="cover_MAMORU.jpg" alt="Обложка книги Мамору: Новая старая жизнь">
+                <h3>Мамору: Новая старая жизнь</h3>
+                <p><i>«У вас когда-нибудь было чувство, будто в вашей жизни что-то не так? Например, вы находитесь не в то время и не в том месте? А что, если не в том теле? Саша — человек, столкнувшийся с шуткой природы. Что делать, если родишься не того пола? »</i></p>
+                <a href="#">Подробнее</a>
+            </div>
+            <div class="book">
+                <img src="protect_comics_3.png" alt="Обложка книги Крициан: Судьба демона">
+                <h3>Крициан: Судьба демона</h3>
+                <p><i>«Можно ли появиться на свет, не имея собственной судьбы? С самого своего появления в этом мире, вы будете вынуждены воровать чужие судьбы и проживать их жизни, чтобы существовать самому. Получится ли в конце концов выбраться из этой петли?»</i></p>
+                <a href="#">Подробнее</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>2025 Elly Fox | Все права защищены</p>
+    </footer>
+
+
+</html>
